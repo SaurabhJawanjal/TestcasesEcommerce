@@ -1,0 +1,979 @@
+Sr. No.,Test case name,Test Objective,Steps,Action,Expected Result,Actual Result,Test Data,"Result 
+(Chrome)",Comments
+1,Company_Profile,Verify if the user can access Company Details in company profile page,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,"Company Name, Company Website, Company Logo are changed to Buisness Name, Buisness Website, Buisness Logo."
+,,,,,,,,,
+Company Name Input Field,,,,,,,,,
+2,Company_Profile,Verify the Company name input field is editable,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company name input field is renamed as Buisness name input field. The buisness name registered on registration page is shown in buisness name with non editable input field
+,,,2,Go to company name input field and start typing,The company name input field should be editable,The company name input field is not editable,,Fail,
+,,,,,,,,,
+3,Company_Profile,Verify the Company name input field Accepts alphabets only and not numbers,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company name input field is renamed as Buisness name input field
+,,,2,Go to company name input field and start typing numbers,"""company name is required"" error should be displayed","The company name input field is not editable ""company name is required"" error is displaying",,Fail,
+,,,,,,,,,
+4,Company_Profile,Verify the Company name input field Accepts minimum 2 charecters.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company name input field is renamed as Buisness name input field
+,,,2,Go to company name input field and start typing only one charecter,"""Company name must be at least 2 characters"" error should be displayed","The company name input field is not editable""Company name must be at least 2 characters"" error is displaying",,Fail,
+,,,,,,,,,
+5,Company_Profile,Verify the Company name input field has maximum 50 charecters limit.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company name input field is renamed as Buisness name input field
+,,,2,Go to company name input field and start typing above 50  charecter,"""Company name must not exceed 50 characters"" error should be displayed","The company name input field is not editable ""Company name must not exceed 50 characters"" error should be displayed",,Fail,
+,,,,,,,,,
+6,Company_Profile,Verify the Company name input field should not allow special charecters,1,Click on company profile on left navigation plane,"""The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to company name input field and start typing special charecters,"""Only characters allowed"" error should be displayed","The company name input field is not editable ""Only characters allowed"" error should be displayed",,Fail,
+,,,,,,,,,
+7,Company_Profile,Verify the Company name input field throw error message if its empty,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to company name input field click inside and then outside,"""Company name is required"" error should be displayed","""Company name is required"" error should be displayed",,Pass,
+,,,,,,,,,
+Company Website Input Field,,,,,,,,,
+8,Company_Profile,Verify the Company website input field is editable,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company website is renamed to buisness website
+,,,2,"Go to Company website input field, click and start typing  ","""Company website"" input field should be editable","not editable ""Company website"" input field should be editable",,Fail,
+,,,,,,,,,
+9,Company_Profile,"Verify the ""https://"" should appear when user start typing in company website input box",1,Click on company profile on left navigation plane,"""The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company website is renamed to buisness website
+,,,2,"Go to Company website input field, click and start typing  ","""https://"" should appear in company website input field","Not editable ""https://"" should appear in company website input field",,Fail,
+,,,,,,,,,
+10,Company_Profile,Verify the backspace functionality working in Company website input field,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company website is renamed to buisness website
+,,,2,"Go to Company website input field, click and start typing  and hit backspace","charecters should be deleted with only ""https://"" visible ","Not editable 2 times ""https://"" is visible ",,failed,"""https://https:/"""
+,,,,,,,,,
+11,Company_Profile,"verify the copy and paste functionality is working in ""Company website"" input field by mouse.",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company website is renamed to buisness website
+,,,2,"copy the url, Go to Company website input field, right click mouse, select paste.",the pasted url should visible in company website input field,the pasted url is not visible in company website input field,,failed,"used urls
+1. https://www.rolex.com/en-us
+2. https://mcdelivery.co.in/"
+,,,,,,,,,
+12,Company_Profile,"verify the copy and paste functionality is working in ""Company website"" input field by keyboard (CTRL+C and CTRL+V)",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company website is renamed to buisness website
+,,,2,"copy the url (CTRL+C), Go to Company website input field, Paste (CTRL+V).",the pasted url should visible in company website input field,the pasted url is not visible in company website input field,,failed,
+,,,,,,,,,
+13,Company_Profile,verify adding only extension (https://www.com) Company website input field,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company website is renamed to buisness website
+,,,2,Go to company website input field and start typing (https://www.com),"""Invalid website address"" message should throw",field not editable No error message displayed,,failed,
+,,,,,,,,,
+14,Company_Profile,"verify an error message shown after adding space in url, in Company website input field",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company website is renamed to buisness website
+,,,2,Go to company website input field and start typing with space (https://www.samsung  .com),"should throw ""space not allowed""",Field not editable No error message displayed,"urls:
+1. www.sam sung.com
+2. www. rolex .com",failed,The space is not allowed in buisness website in[ut field.
+,,,,,,,,,
+15,Company_Profile,verify without entering the url in the field and click outside. a error message should be shown in Company website input field,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company website is renamed to buisness website
+,,,2,Go to company website input field and start typing with space (https://www.samsung  .com),"""Company website is required"" should be visible","""Company website is required"" is visible",,Pass,throwing error as Buisness website is required.
+,,,,,,,,,
+16,Company_Profile,Verify a URL containing Parameters in company website input field is not allowed.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company website is renamed to buisness website
+,,,2,Go to company website input field and start typing url with parameters.,"""Invalid website address"" message should throw",field not editabel No error message displayed,"url:
+1. https://www.domain.com/page?key1=value1&key2=value2",failed,
+,,,,,,,,,
+Company Logo,,,,,,,,,
+17,Company_Profile,Verify Upload Image button is clickable or not.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to company logo and click choose file,tab should open to select images,No upload button . tab is opening to select images,,failed,
+,,,,,,,,,
+18,Company_Profile,Verify button displaying text choose file.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to company logo and obsereve choose file is present,choose file should be displayed on company logo image button,No choose file is text is present,,failed,
+,,,,,,,,,
+19,Company_Profile,verify the upload button is present near company logo,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to company logo and observe,upload button should be prensent near choose file.,Np upload button is present near choose file.,,failed,
+,,,,,,,,,
+20,Company_Profile,"verify the company logo should allow only JPG, PNG or JPEG format.",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,"Go to company logo , click choose file, select any file except JPG, PNG or JPEG format","""Invalid file only jpg jpeg and png file formats are allowed with less than 2 mb"" should popup","No ""Invalid file only jpg jpeg and png file formats are allowed with less than 2 mb"" has popup","used file formats: 
+.pdf, .xls, .gif",failed,
+,,,,,,,,,
+21,Company_Profile,verify the delete button is appering after chhoosing image file,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,click on choose file,tab containing files should be open,no click on choose file available,,failed,
+,,,3,select .jpg image file and click open,the delete button should appear,the delete button has appeared,,failed,
+,,,,,,,,,
+22,Company_Profile,verify the delete button in  choose file is working ,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,click on choose file,tab containing files should be open,no click on choose file available,,failed,
+,,,3,select .jpg image file and click open,the file name with extension should be visible in choose file input field,No file name with extension should be visible in choose file input field,,failed,
+,,,4,click on delete button icon,the image file name should vanished,No image file name is vanishing,,failed,
+,,,,,,,,,
+23,Company_Profile,verify weather reuploading is available after deleting first uploaded image,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,click on choose file,tab containing files should be open,tab containing files should be open,,failed,
+,,,3,select .jpg image file and click open,the file name with extension should be visible in choose file input field,the file name with extension should be visible in choose file input field,,failed,
+,,,4,click on upload button,"""Sucess image successfully uploaded"" should popup with green right icon","""Sucess image successfully uploaded"" should popup with green right icon",,failed,
+,,,5,click on delete button icon,the image name should vanish and upload button should appear,Upload button is not appearing,,failed,
+,,,,,,,,,
+23,Company_Profile,verify the image file size should not be above 2 mb,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,click on choose file,tab containing files should be open,No tab containing files should be open,,failed,
+,,,3,select .jpg image file above 2 mb and click open,"""Invalid file only jpg jpeg and png file formats are allowed with less than 2 mb"" should popup","""Invalid file only jpg jpeg and png file formats are allowed with less than 2 mb"" has popup",,failed,
+,,,,,,,,,
+24,Company_Profile,Verify uploading by drag and drop image functionality working or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,By Drag the image from folder and drop it on company logo file,The image name should be visible in company logo input box,The image name should be visible in company logo input box,,failed,
+,,,,,,,,,
+"Business type (retailers, government)",,,,,,,,,
+,,,,,,,,,
+25,Company_Profile,verify the buisness type dropdown menu button is working or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,"In Buisness type there are 4 options as Brand Retailers, Suppliers, Government Entity, Services or Consultation."
+,,,2,Go to buisness type dropdown menu and click,"brand retailers, government option should be visible",government option is not available,,failed,
+,,,,,,,,,
+26,Company_Profile,Verify that the brand retails text for the dropdown should be as per requirements and aligned or not.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,check the alignments and text,"""Select Buisness type"" should visible and aligned",visible and aligned,,Pass,
+,,,,,,,,,
+27,Company_Profile,"verify if buisness type remain not selected, the error message should visible",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,update changes button is not activated if the buisness type is not selected
+,,,2,Go to select buisness type and click and click outside,"""Business type is required"" error message should appear","No ""Business type is required"" appeared",,failed,
+,,,,,,,,,
+Company Registration Document,,,,,,,,,
+28,Company_Profile,Verify Upload Image button is clickable or not.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,"Company Registration Document	is now Buisness Registration Document.																"
+,,,2,Go to Company Registration Document and click choose file,tab should open to select pdf,tab is opening to select pdf,,Pass,
+,,,,,,,,,
+29,Company_Profile,Verify Company registration document button displaying text choose file.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,"Company Registration Document	is now Buisness Registration Document.																"
+,,,2,Go to Company registration document and obsereve choose file is present,choose file should be displayed on Company registration document button,choose file is text is present,,Pass,
+,,,,,,,,,
+30,Company_Profile,verify the upload button is present near choose file,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to Company registration document and observe,upload button should be present near choose file.,upload button should be present near choose file.,,Pass,
+,,,,,,,,,
+31,Company_Profile,"verify the Company Registration Document should allow .pdf, .doc, .docx, .xls, .xlsx, .txt, .ppt, .pptx, .jpg, .jpeg, .png, .gif",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,"Company Registration Document	is now Buisness Registration Document.																"
+,,,2,"Go to Company Registration Document , click choose file, select any file (.pdf, .doc, .docx, .xls, .xlsx, .txt, .ppt, .pptx format)","""Document selected please upload"" should popup","No ""Document selected please upload"" popup",,failed,
+,,,,,,,,,
+32,Company_Profile,verify the delete button is appering after chhoosing file,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,"Company Registration Document	is now Buisness Registration Document.																"
+,,,2,click on choose file,tab containing files should be open,tab containing files should be open,,Pass,
+,,,3,select allowed format file and click open,the delete button should appear,the delete button has appeared,,Pass,
+,,,,,,,,,
+33,Company_Profile,verify the delete button in  choose file is working ,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,click on Company registration document choose file,tab containing files should be open,tab containing files should be open,,Pass,
+,,,3,select .jpg image file and click open,the file name with extension should be visible in choose file input field,the file name with extension should be visible in choose file input field,,Pass,
+,,,4,click on delete button icon,the image file name should vanished,the image file name is vanishing,,Pass,
+,,,,,,,,,
+34,Company_Profile,verify weather reuploading is available after deleting first uploaded file,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,click on Company registration document choose file ,tab containing files should be open,tab containing files should be open,,Pass,
+,,,3,select allowed file type and click open,"The file name with extension should be visible in choose file input field and ""Document selected please upload"" should popup","No ""Document selected please upload"" should popup",,failed,
+,,,4,click on upload button,"""Sucess image successfully uploaded"" should popup with green right icon","""Sucess image successfully uploaded"" should popup with green right icon",,pass,
+,,,5,click on delete button icon,the file name should vanish and upload button should appear,the file name should vanish and upload button should appear,,pass,
+,,,,,,,,,
+35,Company_Profile,verify the file size should not be above 2 mb,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,click on choose file,tab containing files should be open,tab containing files should be open,,Pass,
+,,,3,select file above 2 mb and click open,"""only less than 2mb docs are allowed"" should popup","""only less than 2mb docs are allowed"" should popup",,Pass,
+,,,,,,,,,
+36,Company_Profile,Verify uploading by drag and drop image functionality working or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,By Drag the file from folder and drop it on company egistration document choose file,The file name should be visible in company logo input box,The file name should be visible in company logo input box,,Pass,
+,,,,,,,,,
+Registration id,,,,,,,,,
+37,Company_Profile,Verify the Registration id input field is editable,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,RegistrationID is not mandetory field now
+,,,2,Go to Registration id input field and start typing,The Registration id input field should be editable,The Registration id input field is editable,,Pass,
+,,,,,,,,,
+38,Company_Profile,Verify the Registration id input field Accepts minimum 5 charecters.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Registration ID is not a mandetory input field
+,,,2,Go to Registration id input field and start typing only four charecter,"""Registration id must be at least 5 characters"" error should be displayed","""Registration id must be at least 5 characters"" error should be displayed",,pass,
+,,,,,,,,,
+39,Company_Profile,Verify the Registration Id input field has maximum 50 charecters limit.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Registration ID is not a mandetory input field
+,,,2,Go to company name input field and start typing above 20  charecter,"""Registration id must not exceed 20 characters"" error should be displayed","""Registration id must not exceed 20 characters"" error should be displayed",,pass,
+,,,,,,,,,
+40,Company_Profile,Verify the Registration id input field throw error message if its empty,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Registration ID is not a mandetory input field
+,,,2,Go to Registration id input field click inside and then outside,"""Registration id is required"" error should be displayed","""Registration id is required"" error should be displayed",,,
+,,,,,,,,,
+41,Company_Profile,Verify the space should not allowed in Registration id ,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Registration ID is not a mandetory input field
+,,,2,"Go to Registration id input field click inside, start typing text with space","""Invalid id"" error message should throw","""Invalid id"" error message should throw",,,
+,,,,,,,,,
+42,Company_Profile,Verify if Registration id is aligned properly or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Registration ID is not a mandetory input field
+,,,2,Go to Registration id and check Registartion id input fieldand text are aligned properly or not,should properly aligned with buisness type and company website input filed,Not aligned,,failed,
+,,,,,,,,,
+Product Categories,,,,,,,,,
+43,Company_Profile,verify the Product Categories dropdown menu button is working or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to Product Categories dropdown menu and click,"The following element should be visible in Product Categories: 
+Health, Dine Out, Accessories, Cosmetic, Electronics, Games, Luggage and, bags, Home decor, OTT, Buisness and Industrial, etc","The following element should be visible in Product Categories: 
+Health, Dine Out, Accessories, Cosmetic, Electronics, Games, Luggage and, bags, Home decor, OTT, Buisness and Industrial, etc",,pass,The new categories are added. this categories are removed 
+,,,,,,,,,
+44,Company_Profile,Verify that search functonality is working or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,This feature is obsolate
+,,,2,"Go to select Product categories and click, type category name in search box",typed category should appear,typed category is appear,,,
+,,,,,,,,,
+45,Company_Profile,"verify if Product categories remain not selected, the error message should visible",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,The upadate changes button is not activate if product categories are not selected
+,,,2,Go to select Product categories and click and click outside,"""Categories is required"" error message should appear","""Categories is required"" appeared",,,
+,,,,,,,,,
+46,Company_Profile,verify select all functionality is working or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Select All is not available now in product categories
+,,,2,Go to select Product categories and click select all,all categories should be selected,all categories should be selected,,,
+,,,,,,,,,
+47,Company_Profile,verify select all functionality is working or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Select All is not available now in product categories
+,,,2,Go to select Product categories and click select all,all categories should be selected,all categories should be selected,,,
+,,,,,,,,,
+48,Company_Profile,verify to remove a category after selection functionality is working or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,This feature is obsolate
+,,,2,Go to select Product categories and click ,List of categories will appear,list of category is appeard,,,
+,,,3,click on 'x' at selected category,selected category should vanish,selected category should vanish,,,
+,,,,,,,,,
+49,Company_Profile,Verify the drop down should scroll down using mouse,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to select Product categories and click ,List of categories will appear,list of category is appeard,,,
+,,,3,scroll the mouse ,categories should be scrolled down by mouse,categories are scrolled down by mouse,,,
+,,,,,,,,,
+50,Company_Profile,Verify the drop down should scroll down using mouse,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to select Product categories and click ,List of categories will appear,list of category is appeard,,,
+,,,,,,,,,
+51,Company_Profile,verify unselect all functionality is working or not,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,This feature is obsolate
+,,,2,Go to select Product categories and click select all,all categories should be selected,all categories should be selected,,,
+,,,3,click unselect all,all categories should be removed,all categories are removed,,,
+,,,,,,,,,
+Comapny Address,,,,,,,,,
+52,Company_Profile,Verify Comapny Address input field is editable,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company Address input field is renamed as Adress Line
+,,,2,Go to Comapny Address and type text,typed text should appear in Comapny Address input text,typed text has appeared in Comapny Address input text,,,
+,,,,,,,,,
+53,Company_Profile,Verify Comapny Address input field accepts adress with alphanumeric charecters,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company Address input field is renamed as Adress Line
+,,,2,Go to Comapny Address and type alphanumeric text,alphanumeric address is accepted in Comapny Address input field,alphanumeric address is accepted in Comapny Address input field,,,
+,,,,,,,,,
+54,Company_Profile,"Verify Comapny Address input field accepts adress with special charecters (e.g. hypens, periods, commas)",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company Address input field is renamed as Adress Line
+,,,2,"Go to Comapny Address and type address with special charecters (e.g. hypens, periods, commas)",special charecters address is accepted in Comapny Address input field,special charecters address is accepted in Comapny Address input field,,,
+,,,,,,,,,
+55,Company_Profile,Verify Comapany Address input field accepts copy paste functionality by mouse,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company Address input field is renamed as Adress Line
+,,,2,"Go to Comapny Address, copy address and paste ",copy paste functionality should work using mouse,copy paste functionality is working using mouse,,,
+,,,,,,,,,
+56,Company_Profile,Verify Comapny Address input field accepts copy (CTRL+C) paste (CTRL+V) functionality by keyboard ,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company Address input field is renamed as Adress Line
+,,,2,"Go to Comapny Address, copy  address and paste by keyboard",copy paste functionality should work using keyboard,copy paste functionality is working using keyboard,,,
+,,,,,,,,,
+57,Company_Profile,Verify Comapny Address input field accepts mutiple line (Enter functionality),1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,Company Address input field is renamed as Adress Line
+,,,2,"Go to Comapny Address, type address and press enter on keyboard",should return the line and starts new sentence,starts new sentence,,,
+,,,,,,,,,
+Additional Information,,,,,,,,,
+58,Company_Profile,Verify Additional Information input field is editable,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to Additional Information and type text,typed text should appear in Additional Information input text,typed text has appeared in Additional Information input text,,,
+,,,,,,,,,
+59,Company_Profile,Verify Additional Information input field accepts adress with alphanumeric charecters,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to Additional Information and type alphanumeric text,alphanumeric address is accepted in Additional Information input field,alphanumeric address is accepted in Additional Information input field,,,
+,,,,,,,,,
+60,Company_Profile,"Verify Additional Information input field accepts adress with special charecters (e.g. hypens, periods, commas)",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,"Go to Additional Information and type address with special charecters (e.g. hypens, periods, commas)",special charecters address is accepted in Additional Information input field,special charecters address is accepted in Additional Information input field,,,
+,,,,,,,,,
+61,Company_Profile,Verify Additional Information input field accepts copy paste functionality by mouse,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,"Go to Additional Information, copy address and paste ",copy paste functionality should work using mouse,copy paste functionality is working using mouse,,,
+,,,,,,,,,
+62,Company_Profile,Verify Additional Information input field accepts copy (CTRL+C) paste (CTRL+V) functionality by keyboard ,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,"Go to Additional Information, copy  address and paste by keyboard",copy paste functionality should work using keyboard,copy paste functionality is working using keyboard,,,
+,,,,,,,,,
+63,Company_Profile,Verify Additional Information input field accepts mutiple line (Enter functionality),1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,"Go to Additional Information, type address and press enter on keyboard",should return the line and starts new sentence,starts new sentence,,,
+,,,,,,,,,
+"Country, State, City",,,,,,,,,
+64,Company_Profile,Verify the country dropdown is showing the countrys properly,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,2,Go to country drop down menu and click,Country names should visible,Country names should visible,,,
+,,,,,,,,,
+65,Company_Profile,Verify if typing first three country letters in country dropdown menu will appear in drop down menu,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,2,Go to country drop down menu and click,Country names should visible,Country names should visible,,Pass,
+,,,3,Type first 3 letter of any country ,The typed country should appear,The typed country is appearing,,Pass,
+,,,,,,,,,
+66,Company_Profile,Verify the State dropdown is showing the state of respective country selected.,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to country drop down menu and click,Country names should visible,Country names should visible,,,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,3,after selecting country navihgate to state drop down menu and click,state names should be appear,state names should be appear,,Pass,
+,,,,,,,,,
+67,Company_Profile,Verify after selecting the country the state names are identified,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to country drop down menu and click,Country names should visible,Country names should visible,,Pass,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,3,Type first 3 letter of any country ,The typed country should appear,The typed country is appearing,Azerbijan,Pass,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,4,click on state drop down menu and observe,All country and state names should be in English and readable.,Some State names are not readable,,Fail,
+,,,,,,,,,
+68,Company_Profile,Verify No error message should be there when state is selected,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to country drop down menu and click,Country names should visible,Country names should visible,,Pass,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,3,Type first 3 letter of any country  and select,The typed country should appear and select,The typed country is appearing and country is selected,,Pass,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,4,click on state drop down menu and select state,The state should selected without error message,"""State is Required"" Error is showing even after selecting the state in some country selection",,Fail,"Country: Azerbaijaan
+State: AÄdaÅ
+
+Country: Morocco
+State:Beni Mellal"
+,,,,,,,,,
+69,Company_Profile,Verify the city names should visible after selecting country and state,1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,
+,,,2,Go to country drop down menu and click,Country names should visible,Country names should visible,,Pass,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,3,Type first 3 letter of any country  and select,The typed country should appear and select,The typed country is appearing and country is selected,,Pass,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,4,click on state drop down menu and select state,The state should selected without error message,The state should selected without error message,,Fail,
+,,,5,The city should appear in city dropdown menu,The respective city should appear after selecting country and state,The city is not appearing in some country and state selection,,Fail,"Country: Iceland
+State: Saudarkrokur"
+,,,,,,,,,
+70,Company_Profile,"Verify after selecting country, state, city and after reselecting state again the city dropdown should remain unselected",1,Click on company profile on left navigation plane,"The following element should be visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.","The following element is visible in Company Registration Page: 
+1. Company Name
+2. Company Website
+3. Company Logo
+4. Buisness Type (retailers governments)
+5. Registration Id etc.",,Pass,The country dropdown is removed. Now the country selected while registration is shown in country input field with fixed text.
+,,,2,Go to country drop down menu and click,Country names should visible,Country names should visible,,Pass,
+,,,3,Type first 3 letter of any country  and select,The typed country should appear and select,The typed country is appearing and country is selected,,Pass,
+,,,4,click on state drop down menu and select state,The state should selected without error message,The state should selected without error message,,Fail,
+,,,5,The city should appear in city dropdown menu,The respective city should appear after selecting country and state,The city is not appearing in some country and state selection,,Fail,
+,,,6,Go to state drop down menu and select another state,the previously selected city should dissapper ,the previously selected city should dissapper ,,Pass,
+,,,,,,,,,
+71,,,,,,,,,
